@@ -1,0 +1,24 @@
+<div>
+    <h2>Lista de Estudiantes</h2>
+    <table>
+        <thead>
+          <tr>
+            <th>Cédula</th>
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>Teléfono</th>
+            <th>Dirección</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let estudiante of estudiantes">
+            <td>{{ estudiante.est_cedula }}</td>
+            <td>{{ estudiante.est_nombre }}</td>
+            <td>{{ estudiante.est_apellido }}</td>
+            <td>{{ estudiante.est_telefono }}</td>
+            <td>{{ estudiante.est_direccion }}</td>
+          </tr>
+        </tbody>
+      </table>
+      
+  </div>

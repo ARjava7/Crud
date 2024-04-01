@@ -1,0 +1,24 @@
+
+<h1>Registro de usuarios</h1>
+<div>
+
+<form  (ngSubmit)="guardar()">
+  <label for="cedula">Cédula:</label>
+  <input type="text" name="est_cedula" id="cedula" [(ngModel)]="nuevoEstudiante.est_cedula" required>
+  <br>
+  <label for="nombre">Nombre:</label>
+  <input type="text" name="est_nombre" id="nombre"  [(ngModel)]="nuevoEstudiante.est_nombre" required>
+  <br>
+  <label for="apellido">Apellido:</label>
+  <input type="text" name="est_apellido" id="apellido" [(ngModel)]="nuevoEstudiante.est_apellido" required>
+  <br>
+  <label for="telefono">Teléfono:</label>
+  <input type="text" name="est_telefono" id="telefono" [(ngModel)]="nuevoEstudiante.est_telefono" required>
+  <br>
+  <label for="direccion">Dirección:</label>
+  <input type="text" name="est_direccion" id="direccion" [(ngModel)]="nuevoEstudiante.est_direccion" required>
+  <br>
+  <button type="submit">Guardar</button> <!-- Botón para guardar el nuevo estudiante -->
+</form>
+  
+</div>
